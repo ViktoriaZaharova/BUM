@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>БУМ - уличное игровое и спортивное оборудование</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+  <ul class="menu">
+    <li><a href="catalog.html">Каталог</a></li>
+    <li><a href="about.html">о нас</a></li>
+    <li><a href="packing.html">упаковка и отправка</a></li>
+    <li><a href="certificate.html">сертификаты</a></li>
+    <li><a href="projects.html">наши проекты</a></li>
+    <li><a href="architects.html">архитекторам</a></li>
+    <li><a href="#">контакты</a></li>
+  </ul>
+  <div class="phone-group">
+    <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+    <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+  </div>
+
+  <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+  <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+
+  <form method="post" class="form-search">
+    <label><input type="text" placeholder="поиск" name="search"></label>
+    <button type="submit" class="btn-submit">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#search"></use>
+      </svg>
+    </button>
+  </form>
+
+  <a href="#" class="links-complex" target="_blank">
+    <span class="links-complex__text">Домашние спортивные комплексы</span>
+    <span class="links-complex__icon"><svg class="svg-icon"><use
+        xlink:href="img/sprite.svg#link"></use></svg></span>
+  </a>
+</div>
+
+<header>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+          <div class="phone-group">
+            <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+            <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+          </div>
+
+          <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
+
+          <a href="#" class="links-social">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+          <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+          <a href="catalog.html" class="links-catalog">Каталог</a>
+          <ul class="menu">
+            <li><a href="about.html">о нас</a></li>
+            <li><a href="packing.html">упаковка и отправка</a></li>
+            <li><a href="certificate.html">сертификаты</a></li>
+            <li><a href="projects.html">наши проекты</a></li>
+            <li><a href="architects.html">архитекторам</a></li>
+            <li><a href="#">контакты</a></li>
+          </ul>
+
+          <a href="#" class="links-complex" target="_blank">
+            <span class="links-complex__text">Домашние спортивные комплексы</span>
+            <span class="links-complex__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#link"></use></svg></span>
+          </a>
+
+          <form method="post" class="form-search">
+            <label><input type="text" placeholder="поиск" name="search"></label>
+            <button type="submit" class="btn-submit">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page architects-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Архитекторам</h1>
+      </div>
+    </div>
+
+    <div class="row align-items-end">
+      <div class="col-12 col-xl-7">
+        <div class="advantages-architect">
+          <h3>Преимущества работы с нами:</h3>
+
+          <div class="advantages-architects-box">
+            <div class="advantages-architects-box__img"><img src="img/arch1.png" alt=""></div>
+            <div class="advantages-architects-box__body">
+              <h4>Удобное проектирование</h4>
+              <div class="box-text"><p>Мы предоставляем все схемы оборудования. Скачать их в формате DWG можно прямо с
+                нашего сайта.</p></div>
+            </div>
+          </div>
+          <div class="advantages-architects-box">
+            <div class="advantages-architects-box__img"><img src="img/arch2.png" alt=""></div>
+            <div class="advantages-architects-box__body">
+              <h4>Качество, которым клиенты останутся довольны спустя много лет</h4>
+              <div class="box-text"><p>Мы гарантируем, что все составные компоненты и элементы изделий изготовлены из проверенных качественных материалов. Продукция, перед отправкой заказчику, проходит двойной контроль качества, первый на этапе производства, второй на этапе погрузки.</p></div>
+            </div>
+          </div>
+          <div class="advantages-architects-box">
+            <div class="advantages-architects-box__img"><img src="img/arch3.png" alt=""></div>
+            <div class="advantages-architects-box__body">
+              <h4>Особые условия для архитекторов</h4>
+              <div class="box-text"><p>Мы разработали специальную систему бонусов и скидок, по которой мы работаем уже со многими архитекторами. </p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-xl-5">
+        <div class="contacts-box">
+          <div class="contacts-box__img"><img src="img/manager.png" alt=""></div>
+          <div class="contacts-box__body">
+            <p>Для обсуждения условий сотрудничества позвоните нам по телефону</p>
+            <a href="tel:+79093150800" class="phone-links">8 (909) 315-08-00</a>
+            <a href="tel:+79603166000" class="phone-links">8 (960) 316-60-00.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="callback-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-xl-10 offset-xl-1">
+        <div class="callback-box">
+          <h2>остались вопросы?</h2>
+          <form method="post" class="form">
+            <label><input type="text" placeholder="Имя" name="name"></label>
+            <label><input type="text" placeholder="Телефон" name="phone"></label>
+            <label><input type="text" placeholder="e-mail" name="mail"></label>
+            <button class="btn btn-accent" type="submit">Перезвоните мне</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="bg-blue color-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <div class="phone-group">
+          <a href="tel:+79093150800" class="phone color-white">8 (909) 315-08-00</a>
+          <a href="tel:+79603166000" class="phone color-white">8 (960) 316-60-00</a>
+        </div>
+        <a href="mailto:pochta.bum@gmail.com" class="mail color-accent">pochta.bum@gmail.com</a>
+
+        <a href="#" class="links-social">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg>
+        </a>
+
+        <a href="#" class="btn btn-border-white" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="modalCallback" tabindex="-1" aria-labelledby="modalCallbackLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Обратный звонок</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form">
+          <label><input type="text" placeholder="Имя" name="name"></label>
+          <label><input type="text" placeholder="Телефон" name="phone"></label>
+          <label><input type="text" placeholder="e-mail" name="mail"></label>
+          <button class="btn btn-accent" type="submit">Перезвоните мне</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalPrice" tabindex="-1" aria-labelledby="modalPriceLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Запросить прайс</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form">
+          <label><input type="text" placeholder="Имя" name="name"></label>
+          <label><input type="text" placeholder="Телефон" name="phone"></label>
+          <label><input type="text" placeholder="e-mail" name="mail"></label>
+          <button class="btn btn-accent" type="submit">Отправить</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+        integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
