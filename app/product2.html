@@ -34,54 +34,301 @@
 
 <body>
 
-<div class="mobile-menu">
-  <div class="btn-close"></div>
-  <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-  <ul class="menu">
-    <li><a href="catalog.html">Каталог</a></li>
-    <li><a href="about.html">о нас</a></li>
-    <li><a href="packing.html">упаковка и отправка</a></li>
-    <li><a href="certificate.html">сертификаты</a></li>
-    <li><a href="projects.html">наши проекты</a></li>
-    <li><a href="architects.html">архитекторам</a></li>
-    <li><a href="#">контакты</a></li>
-  </ul>
-  <div class="phone-group">
-    <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
-    <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+<div class="wrapper">
+
+  <div class="mobile-menu">
+    <div class="btn-close"></div>
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+    <ul class="menu">
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="about.html">о нас</a></li>
+      <li><a href="packing.html">упаковка и отправка</a></li>
+      <li><a href="certificate.html">сертификаты</a></li>
+      <li><a href="projects.html">наши проекты</a></li>
+      <li><a href="architects.html">архитекторам</a></li>
+    </ul>
+    <div class="phone-group">
+      <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+      <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+    </div>
+
+    <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+    <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+
+    <form method="post" class="form-search">
+      <label><input type="text" placeholder="поиск" name="search"></label>
+      <button type="submit" class="btn-submit">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </form>
+
+    <a href="#" class="links-complex" target="_blank">
+      <span class="links-complex__text">Домашние спортивные комплексы</span>
+      <span class="links-complex__icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#link"></use></svg></span>
+    </a>
   </div>
 
-  <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
-  <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <div class="phone-group">
+              <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+              <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+            </div>
 
-  <form method="post" class="form-search">
-    <label><input type="text" placeholder="поиск" name="search"></label>
-    <button type="submit" class="btn-submit">
-      <svg class="svg-icon">
-        <use xlink:href="img/sprite.svg#search"></use>
-      </svg>
-    </button>
-  </form>
+            <div class="phone-mobile">
+              <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+              <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
+            </div>
 
-  <a href="#" class="links-complex" target="_blank">
-    <span class="links-complex__text">Домашние спортивные комплексы</span>
-    <span class="links-complex__icon"><svg class="svg-icon"><use
-        xlink:href="img/sprite.svg#link"></use></svg></span>
-  </a>
-</div>
+            <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
 
-<header>
-  <div class="header-top">
+            <a href="#" class="links-social">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+
+            <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+            <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="catalog.html" class="links-catalog">Каталог</a>
+            <ul class="menu">
+              <li><a href="about.html">о нас</a></li>
+              <li><a href="packing.html">упаковка и отправка</a></li>
+              <li><a href="certificate.html">сертификаты</a></li>
+              <li><a href="projects.html">наши проекты</a></li>
+              <li><a href="architects.html">архитекторам</a></li>
+            </ul>
+
+            <a href="#" class="links-complex" target="_blank">
+              <span class="links-complex__text">Домашние спортивные комплексы</span>
+              <span class="links-complex__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#link"></use></svg></span>
+            </a>
+
+            <form method="post" class="form-search">
+              <label><input type="text" placeholder="поиск" name="search"></label>
+              <button type="submit" class="btn-submit">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page product-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="product-gallery">
+            <div class="product-preview">
+
+              <div class="slide">
+                <div class="product-preview__item"><img src="img/product2.png" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="product-preview__item"><img src="img/product-preview3.png" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="product-preview__item"><img src="img/product-preview4.png" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="product-preview__item"><img src="img/product3.png" alt=""></div>
+              </div>
+            </div>
+
+            <div class="product-max">
+              <div class="slide">
+                <div class="product-max__item"><img src="img/product2.png" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="product-max__item"><img src="img/product-preview3.png" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="product-max__item"><img src="img/product-preview4.png" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="product-max__item"><img src="img/product3.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="product-info">
+            <h1>Комплекс игровой детский</h1>
+            <div class="article">101.101.00</div>
+            <div class="box-text">
+              <p>Игровой комплекс для тематических игр и физического развития предназначен для детей в возрасте от 4
+                лет.
+                Изделие представляет собой сборно-разборную каркасную конструкцию из металлических труб, установленную
+                на
+                забетонированные стойки.</p>
+              <p>Изделие устанавливается на открытых уличных участках, находящихся под контролем ответственного лица –
+                эксплуатанта. Установка Изделия должна проводится на ровной площадке, свободной от насаждений. В зоне
+                приземления должно быть ударопоглощающее покрытие (песок, древесные опилки) минимальной толщиной 300
+                мм</p>
+            </div>
+            <div class="price-wrapper">
+              <div class="price">19 900 ₽</div>
+
+              <a href="#" class="btn btn-blue btn-order">заказать</a>
+            </div>
+
+            <div class="characteristics-wrap">
+              <ul class="list-characteristics list-characteristics-two">
+
+                <li>
+                  <p>Габаритные размеры</p>
+                  <span>a=4145 b=3950 мм</span>
+                </li>
+                <li>
+                  <p>Высота</p>
+                  <span>h=3360 мм</span>
+                </li>
+              </ul>
+              <div class="btn-group">
+                <a href="#" class="btn btn-accent">Посмотреть вид сверху</a>
+                <a href="#" class="btn btn-accent btn-download" target="_blank" download="#">
+                  <span class="btn-icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#download"></use></svg></span>
+                  <span class="btn-text">скачать вид сверху DWG</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="technical-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xl-6">
+          <h2>Техническое описание <br> и информация об установке</h2>
+        </div>
+
+        <div class="col-12 mb-25">
+          <div class="box-text">
+            <p>Тренажер задействует широчайшую мышцу спины, большую круглую мышцу, задние части дельтовидных мыщц,
+              бицепсы, плечелучевые и в конце движения, при сведении лопаток друг с другом, трапецевидные и ромбовидные
+              мышцы. В момент выпрямления туловища вовлекаются также мышцы-разгибатели позвоночника. В момент наклона
+              растягиваются все мышцы спины.
+              Тренажер задействует широчайшую мышцу спины, большую круглую мышцу, задние части дельтовидных мыщц,
+              бицепсы,
+              плечелучевые и в конце движения, при сведении лопаток друг с другом, трапецевидные и ромбовидные мышцы. В
+              момент выпрямления туловища вовлекаются также мышцы-разгибатели позвоночника. В момент наклона
+              растягиваются
+              все мышцы спины.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-xl-8">
+          <div class="box-text">
+            <p>Тренажер задействует широчайшую мышцу спины, большую круглую мышцу, задние части дельтовидных мыщц,
+              бицепсы, плечелучевые и в конце движения, при сведении лопаток друг с другом, трапецевидные и ромбовидные
+              мышцы. В момент выпрямления туловища вовлекаются также мышцы-разгибатели позвоночника. В момент наклона
+              растягиваются все мышцы спины.Тренажер задействует широчайшую мышцу спины, большую круглую мышцу, задние
+              части дельтовидных мыщц, бицепсы, плечелучевые и в конце движения, при сведении лопаток друг с другом,
+              трапецевидные и ромбовидные мышцы. В момент выпрямления туловища вовлекаются также мышцы-разгибатели
+              позвоночника. В момент наклона растягиваются все мышцы спины.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-xl-4">
+          <div class="download-box">
+            <h3>Скачать инструкцию по установке</h3>
+
+            <a href="#" class="btn btn-accent btn-download" target="_blank" download="#">
+              <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#download"></use></svg></span>
+              <span class="btn-text">скачать docx</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="completed-projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>реализованные проекты</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="completed-projects-slider">
+      <div class="slide">
+        <div class="completed-projects__item"><img src="img/projects16.png" alt=""></div>
+      </div>
+      <div class="slide">
+        <div class="completed-projects__item"><img src="img/projects17.png" alt=""></div>
+      </div>
+      <div class="slide">
+        <div class="completed-projects__item"><img src="img/projects18.png" alt=""></div>
+      </div>
+      <div class="slide">
+        <div class="completed-projects__item"><img src="img/projects16.png" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="callback-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xl-10 offset-xl-1">
+          <div class="callback-box">
+            <h2>остались вопросы?</h2>
+            <form method="post" class="form">
+              <label><input type="text" placeholder="Имя" name="name"></label>
+              <label><input type="text" placeholder="Телефон" name="phone"></label>
+              <label><input type="text" placeholder="e-mail" name="mail"></label>
+              <button class="btn btn-accent" type="submit">Перезвоните мне</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-blue color-white">
     <div class="container">
       <div class="row">
         <div class="col-12 d-flex flex-wrap align-items-center">
           <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
           <div class="phone-group">
-            <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
-            <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+            <a href="tel:+79093150800" class="phone color-white">8 (909) 315-08-00</a>
+            <a href="tel:+79603166000" class="phone color-white">8 (960) 316-60-00</a>
           </div>
-
-          <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
+          <a href="mailto:pochta.bum@gmail.com" class="mail color-accent">pochta.bum@gmail.com</a>
 
           <a href="#" class="links-social">
             <svg class="svg-icon">
@@ -89,223 +336,19 @@
             </svg>
           </a>
 
-          <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
-          <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
-          <div class="btn-burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="header-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex flex-wrap align-items-center">
-          <a href="catalog.html" class="links-catalog">Каталог</a>
+          <a href="#" class="btn btn-border-white" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
           <ul class="menu">
             <li><a href="about.html">о нас</a></li>
             <li><a href="packing.html">упаковка и отправка</a></li>
             <li><a href="certificate.html">сертификаты</a></li>
             <li><a href="projects.html">наши проекты</a></li>
             <li><a href="architects.html">архитекторам</a></li>
-            <li><a href="#">контакты</a></li>
           </ul>
-
-          <a href="#" class="links-complex" target="_blank">
-            <span class="links-complex__text">Домашние спортивные комплексы</span>
-            <span class="links-complex__icon"><svg class="svg-icon"><use
-                xlink:href="img/sprite.svg#link"></use></svg></span>
-          </a>
-
-          <form method="post" class="form-search">
-            <label><input type="text" placeholder="поиск" name="search"></label>
-            <button type="submit" class="btn-submit">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#search"></use>
-              </svg>
-            </button>
-          </form>
         </div>
       </div>
     </div>
-  </div>
-</header>
-
-<section class="page product-page">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6">
-        <div class="product-gallery">
-          <div class="product-preview">
-
-            <div class="slide">
-              <div class="product-preview__item"><img src="img/product2.png" alt=""></div>
-            </div>
-            <div class="slide">
-              <div class="product-preview__item"><img src="img/product-preview3.png" alt=""></div>
-            </div>
-            <div class="slide">
-              <div class="product-preview__item"><img src="img/product-preview4.png" alt=""></div>
-            </div>
-            <div class="slide">
-              <div class="product-preview__item"><img src="img/product3.png" alt=""></div>
-            </div>
-          </div>
-
-          <div class="product-max">
-            <div class="slide">
-              <div class="product-max__item"><img src="img/product2.png" alt=""></div>
-            </div>
-            <div class="slide">
-              <div class="product-max__item"><img src="img/product-preview3.png" alt=""></div>
-            </div>
-            <div class="slide">
-              <div class="product-max__item"><img src="img/product-preview4.png" alt=""></div>
-            </div>
-            <div class="slide">
-              <div class="product-max__item"><img src="img/product3.png" alt=""></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="product-info">
-          <h1>Комплекс игровой детский</h1>
-          <div class="article">101.101.00</div>
-          <div class="box-text">
-            <p>Игровой комплекс для тематических игр и физического развития предназначен для детей в возрасте от 4 лет.
-              Изделие представляет собой сборно-разборную каркасную конструкцию из металлических труб, установленную на
-              забетонированные стойки.</p>
-            <p>Изделие устанавливается на открытых уличных участках, находящихся под контролем ответственного лица –
-              эксплуатанта. Установка Изделия должна проводится на ровной площадке, свободной от насаждений. В зоне
-              приземления должно быть ударопоглощающее покрытие (песок, древесные опилки) минимальной толщиной 300
-              мм</p>
-          </div>
-          <div class="price-wrapper">
-            <div class="price">19 900 ₽</div>
-
-            <a href="#" class="btn btn-blue btn-order">заказать</a>
-          </div>
-
-          <div class="characteristics-wrap">
-            <ul class="list-characteristics list-characteristics-two">
-
-              <li>
-                <p>Габаритные размеры</p>
-                <span>a=4145 b=3950 мм</span>
-              </li>
-              <li>
-                <p>Высота</p>
-                <span>h=3360 мм</span>
-              </li>
-            </ul>
-            <div class="btn-group">
-              <a href="#" class="btn btn-accent">Посмотреть вид сверху</a>
-              <a href="#" class="btn btn-accent btn-download" target="_blank" download="#">
-                <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#download"></use></svg></span>
-                <span class="btn-text">скачать вид сверху DWG</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="technical-info">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-xl-6">
-        <h2>Техническое описание <br> и информация об установке</h2>
-      </div>
-
-      <div class="col-12 mb-25">
-        <div class="box-text">
-          <p>Тренажер задействует широчайшую мышцу спины, большую круглую мышцу, задние части дельтовидных мыщц,
-            бицепсы, плечелучевые и в конце движения, при сведении лопаток друг с другом, трапецевидные и ромбовидные
-            мышцы. В момент выпрямления туловища вовлекаются также мышцы-разгибатели позвоночника. В момент наклона
-            растягиваются все мышцы спины.
-            Тренажер задействует широчайшую мышцу спины, большую круглую мышцу, задние части дельтовидных мыщц, бицепсы,
-            плечелучевые и в конце движения, при сведении лопаток друг с другом, трапецевидные и ромбовидные мышцы. В
-            момент выпрямления туловища вовлекаются также мышцы-разгибатели позвоночника. В момент наклона растягиваются
-            все мышцы спины.</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-xl-8">
-        <div class="box-text">
-          <p>Тренажер задействует широчайшую мышцу спины, большую круглую мышцу, задние части дельтовидных мыщц,
-            бицепсы, плечелучевые и в конце движения, при сведении лопаток друг с другом, трапецевидные и ромбовидные
-            мышцы. В момент выпрямления туловища вовлекаются также мышцы-разгибатели позвоночника. В момент наклона
-            растягиваются все мышцы спины.Тренажер задействует широчайшую мышцу спины, большую круглую мышцу, задние
-            части дельтовидных мыщц, бицепсы, плечелучевые и в конце движения, при сведении лопаток друг с другом,
-            трапецевидные и ромбовидные мышцы. В момент выпрямления туловища вовлекаются также мышцы-разгибатели
-            позвоночника. В момент наклона растягиваются все мышцы спины.</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-xl-4">
-        <div class="download-box">
-          <h3>Скачать инструкцию в WORD</h3>
-
-          <a href="#" class="btn btn-accent btn-download" target="_blank" download="#">
-            <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#download"></use></svg></span>
-            <span class="btn-text">скачать docx</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<div class="callback-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-xl-10 offset-xl-1">
-        <div class="callback-box">
-          <h2>остались вопросы?</h2>
-          <form method="post" class="form">
-            <label><input type="text" placeholder="Имя" name="name"></label>
-            <label><input type="text" placeholder="Телефон" name="phone"></label>
-            <label><input type="text" placeholder="e-mail" name="mail"></label>
-            <button class="btn btn-accent" type="submit">Перезвоните мне</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+  </footer>
 </div>
-
-
-<footer class="bg-blue color-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 d-flex flex-wrap align-items-center">
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-        <div class="phone-group">
-          <a href="tel:+79093150800" class="phone color-white">8 (909) 315-08-00</a>
-          <a href="tel:+79603166000" class="phone color-white">8 (960) 316-60-00</a>
-        </div>
-        <a href="mailto:pochta.bum@gmail.com" class="mail color-accent">pochta.bum@gmail.com</a>
-
-        <a href="#" class="links-social">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#instagram"></use>
-          </svg>
-        </a>
-
-        <a href="#" class="btn btn-border-white" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <!-- Модальное окно -->
 <div class="modal fade" id="modalCallback" tabindex="-1" aria-labelledby="modalCallbackLabel" aria-hidden="true">

@@ -34,54 +34,212 @@
 
 <body>
 
-<div class="mobile-menu">
-  <div class="btn-close"></div>
-  <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-  <ul class="menu">
-    <li><a href="catalog.html">Каталог</a></li>
-    <li><a href="about.html">о нас</a></li>
-    <li><a href="packing.html">упаковка и отправка</a></li>
-    <li><a href="certificate.html">сертификаты</a></li>
-    <li><a href="projects.html">наши проекты</a></li>
-    <li><a href="architects.html">архитекторам</a></li>
-    <li><a href="#">контакты</a></li>
-  </ul>
-  <div class="phone-group">
-    <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
-    <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+<div class="wrapper">
+
+  <div class="mobile-menu">
+    <div class="btn-close"></div>
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+    <ul class="menu">
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="about.html">о нас</a></li>
+      <li><a href="packing.html">упаковка и отправка</a></li>
+      <li><a href="certificate.html">сертификаты</a></li>
+      <li><a href="projects.html">наши проекты</a></li>
+      <li><a href="architects.html">архитекторам</a></li>
+    </ul>
+    <div class="phone-group">
+      <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+      <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+    </div>
+
+    <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+    <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+
+    <form method="post" class="form-search">
+      <label><input type="text" placeholder="поиск" name="search"></label>
+      <button type="submit" class="btn-submit">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </form>
+
+    <a href="#" class="links-complex" target="_blank">
+      <span class="links-complex__text">Домашние спортивные комплексы</span>
+      <span class="links-complex__icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#link"></use></svg></span>
+    </a>
   </div>
 
-  <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
-  <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <div class="phone-group">
+              <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+              <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+            </div>
 
-  <form method="post" class="form-search">
-    <label><input type="text" placeholder="поиск" name="search"></label>
-    <button type="submit" class="btn-submit">
-      <svg class="svg-icon">
-        <use xlink:href="img/sprite.svg#search"></use>
-      </svg>
-    </button>
-  </form>
+            <div class="phone-mobile">
+              <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+              <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
+            </div>
 
-  <a href="#" class="links-complex" target="_blank">
-    <span class="links-complex__text">Домашние спортивные комплексы</span>
-    <span class="links-complex__icon"><svg class="svg-icon"><use
-        xlink:href="img/sprite.svg#link"></use></svg></span>
-  </a>
-</div>
+            <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
 
-<header>
-  <div class="header-top">
+            <a href="#" class="links-social">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+
+            <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+            <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="catalog.html" class="links-catalog">Каталог</a>
+            <ul class="menu">
+              <li><a href="about.html">о нас</a></li>
+              <li><a href="packing.html">упаковка и отправка</a></li>
+              <li><a href="certificate.html">сертификаты</a></li>
+              <li><a href="projects.html">наши проекты</a></li>
+              <li><a href="architects.html">архитекторам</a></li>
+            </ul>
+
+            <a href="#" class="links-complex" target="_blank">
+              <span class="links-complex__text">Домашние спортивные комплексы</span>
+              <span class="links-complex__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#link"></use></svg></span>
+            </a>
+
+            <form method="post" class="form-search">
+              <label><input type="text" placeholder="поиск" name="search"></label>
+              <button type="submit" class="btn-submit">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page projects-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Наши проекты</h1>
+          <div class="box-text">
+            <p>Специальные игровые и спортивные зоны для улиц в наше время стали привычной частью жизни горожан всех
+              возрастов, что не может не радовать. А здесь вы можете увидеть одни из последних наших проектов.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-33">
+          <a href="img/project1.png" class="projects-photo" data-fancybox="projects"><img src="img/project1.png" alt=""></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-33">
+          <a href="img/project2.png" class="projects-photo" data-fancybox="projects"><img src="img/project2.png" alt=""></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-33">
+          <a href="img/project3.png" class="projects-photo" data-fancybox="projects"><img src="img/project3.png" alt=""></a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-33">
+          <a href="img/project4.png" class="projects-photo" data-fancybox="projects"><img src="img/project4.png" alt=""></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-33">
+          <a href="img/project5.png" class="projects-photo" data-fancybox="projects"><img src="img/project5.png" alt=""></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-33">
+          <a href="img/project6.png" class="projects-photo" data-fancybox="projects"><img src="img/project6.png" alt=""></a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-33">
+          <a href="img/project7.png" class="projects-photo" data-fancybox="projects"><img src="img/project7.png" alt=""></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-33">
+          <a href="img/project8.png" class="projects-photo" data-fancybox="projects"><img src="img/project8.png" alt=""></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-33">
+          <a href="img/project9.png" class="projects-photo" data-fancybox="projects"><img src="img/project9.png" alt=""></a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-33">
+          <a href="img/project10.png" class="projects-photo" data-fancybox="projects"><img src="img/project10.png"
+                                                                                           alt=""></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-33">
+          <a href="img/project11.png" class="projects-photo" data-fancybox="projects"><img src="img/project11.png"
+                                                                                           alt=""></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-33">
+          <a href="img/project12.png" class="projects-photo" data-fancybox="projects"><img src="img/project12.png"
+                                                                                           alt=""></a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-33">
+          <a href="img/project13.png" class="projects-photo" data-fancybox="projects"><img src="img/project13.png"
+                                                                                           alt=""></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-33">
+          <a href="img/project14.png" class="projects-photo" data-fancybox="projects"><img src="img/project14.png"
+                                                                                           alt=""></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-33">
+          <a href="img/project15.png" class="projects-photo" data-fancybox="projects"><img src="img/project15.png"
+                                                                                           alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="callback-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xl-10 offset-xl-1">
+          <div class="callback-box">
+            <h2>остались вопросы?</h2>
+            <form method="post" class="form">
+              <label><input type="text" placeholder="Имя" name="name"></label>
+              <label><input type="text" placeholder="Телефон" name="phone"></label>
+              <label><input type="text" placeholder="e-mail" name="mail"></label>
+              <button class="btn btn-accent" type="submit">Перезвоните мне</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-blue color-white">
     <div class="container">
       <div class="row">
         <div class="col-12 d-flex flex-wrap align-items-center">
           <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
           <div class="phone-group">
-            <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
-            <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+            <a href="tel:+79093150800" class="phone color-white">8 (909) 315-08-00</a>
+            <a href="tel:+79603166000" class="phone color-white">8 (960) 316-60-00</a>
           </div>
-
-          <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
+          <a href="mailto:pochta.bum@gmail.com" class="mail color-accent">pochta.bum@gmail.com</a>
 
           <a href="#" class="links-social">
             <svg class="svg-icon">
@@ -89,158 +247,19 @@
             </svg>
           </a>
 
-          <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
-          <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
-          <div class="btn-burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="header-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex flex-wrap align-items-center">
-          <a href="catalog.html" class="links-catalog">Каталог</a>
+          <a href="#" class="btn btn-border-white" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
           <ul class="menu">
             <li><a href="about.html">о нас</a></li>
             <li><a href="packing.html">упаковка и отправка</a></li>
             <li><a href="certificate.html">сертификаты</a></li>
             <li><a href="projects.html">наши проекты</a></li>
             <li><a href="architects.html">архитекторам</a></li>
-            <li><a href="#">контакты</a></li>
           </ul>
-
-          <a href="#" class="links-complex" target="_blank">
-            <span class="links-complex__text">Домашние спортивные комплексы</span>
-            <span class="links-complex__icon"><svg class="svg-icon"><use
-                xlink:href="img/sprite.svg#link"></use></svg></span>
-          </a>
-
-          <form method="post" class="form-search">
-            <label><input type="text" placeholder="поиск" name="search"></label>
-            <button type="submit" class="btn-submit">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#search"></use>
-              </svg>
-            </button>
-          </form>
         </div>
       </div>
     </div>
-  </div>
-</header>
-
-<section class="page projects-page">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1>Наши проекты</h1>
-        <div class="box-text">
-          <p>Специальные игровые и спортивные зоны для улиц в наше время стали привычной частью жизни горожан всех
-            возрастов, что не может не радовать. А здесь вы можете увидеть одни из последних наших проектов.</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-4 mb-33">
-        <a href="img/project1.png" class="projects-photo" data-fancybox="projects"><img src="img/project1.png" alt=""></a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-33">
-        <a href="img/project2.png" class="projects-photo" data-fancybox="projects"><img src="img/project2.png" alt=""></a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-33">
-        <a href="img/project3.png" class="projects-photo" data-fancybox="projects"><img src="img/project3.png" alt=""></a>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4 mb-33">
-        <a href="img/project4.png" class="projects-photo" data-fancybox="projects"><img src="img/project4.png" alt=""></a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-33">
-        <a href="img/project5.png" class="projects-photo" data-fancybox="projects"><img src="img/project5.png" alt=""></a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-33">
-        <a href="img/project6.png" class="projects-photo" data-fancybox="projects"><img src="img/project6.png" alt=""></a>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4 mb-33">
-        <a href="img/project7.png" class="projects-photo" data-fancybox="projects"><img src="img/project7.png" alt=""></a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-33">
-        <a href="img/project8.png" class="projects-photo" data-fancybox="projects"><img src="img/project8.png" alt=""></a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-33">
-        <a href="img/project9.png" class="projects-photo" data-fancybox="projects"><img src="img/project9.png" alt=""></a>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4 mb-33">
-        <a href="img/project10.png" class="projects-photo" data-fancybox="projects"><img src="img/project10.png" alt=""></a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-33">
-        <a href="img/project11.png" class="projects-photo" data-fancybox="projects"><img src="img/project11.png" alt=""></a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-33">
-        <a href="img/project12.png" class="projects-photo" data-fancybox="projects"><img src="img/project12.png" alt=""></a>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4 mb-33">
-        <a href="img/project13.png" class="projects-photo" data-fancybox="projects"><img src="img/project13.png" alt=""></a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-33">
-        <a href="img/project14.png" class="projects-photo" data-fancybox="projects"><img src="img/project14.png" alt=""></a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-33">
-        <a href="img/project15.png" class="projects-photo" data-fancybox="projects"><img src="img/project15.png" alt=""></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="callback-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-xl-10 offset-xl-1">
-        <div class="callback-box">
-          <h2>остались вопросы?</h2>
-          <form method="post" class="form">
-            <label><input type="text" placeholder="Имя" name="name"></label>
-            <label><input type="text" placeholder="Телефон" name="phone"></label>
-            <label><input type="text" placeholder="e-mail" name="mail"></label>
-            <button class="btn btn-accent" type="submit">Перезвоните мне</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+  </footer>
 </div>
-
-
-<footer class="bg-blue color-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 d-flex flex-wrap align-items-center">
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-        <div class="phone-group">
-          <a href="tel:+79093150800" class="phone color-white">8 (909) 315-08-00</a>
-          <a href="tel:+79603166000" class="phone color-white">8 (960) 316-60-00</a>
-        </div>
-        <a href="mailto:pochta.bum@gmail.com" class="mail color-accent">pochta.bum@gmail.com</a>
-
-        <a href="#" class="links-social">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#instagram"></use>
-          </svg>
-        </a>
-
-        <a href="#" class="btn btn-border-white" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <!-- Модальное окно -->
 <div class="modal fade" id="modalCallback" tabindex="-1" aria-labelledby="modalCallbackLabel" aria-hidden="true">

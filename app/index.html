@@ -33,55 +33,347 @@
 </head>
 
 <body>
+<div class="wrapper">
 
-<div class="mobile-menu">
-  <div class="btn-close"></div>
-  <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-  <ul class="menu">
-    <li><a href="catalog.html">Каталог</a></li>
-    <li><a href="about.html">о нас</a></li>
-    <li><a href="packing.html">упаковка и отправка</a></li>
-    <li><a href="certificate.html">сертификаты</a></li>
-    <li><a href="projects.html">наши проекты</a></li>
-    <li><a href="architects.html">архитекторам</a></li>
-    <li><a href="#">контакты</a></li>
-  </ul>
-  <div class="phone-group">
-    <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
-    <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+  <div class="mobile-menu">
+    <div class="btn-close"></div>
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+    <ul class="menu">
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="about.html">о нас</a></li>
+      <li><a href="packing.html">упаковка и отправка</a></li>
+      <li><a href="certificate.html">сертификаты</a></li>
+      <li><a href="projects.html">наши проекты</a></li>
+      <li><a href="architects.html">архитекторам</a></li>
+    </ul>
+    <div class="phone-group">
+      <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+      <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+    </div>
+
+    <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+    <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+
+    <form method="post" class="form-search">
+      <label><input type="text" placeholder="поиск" name="search"></label>
+      <button type="submit" class="btn-submit">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </form>
+
+    <a href="#" class="links-complex" target="_blank">
+      <span class="links-complex__text">Домашние спортивные комплексы</span>
+      <span class="links-complex__icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#link"></use></svg></span>
+    </a>
   </div>
 
-  <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
-  <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <div class="phone-group">
+              <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+              <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+            </div>
 
-  <form method="post" class="form-search">
-    <label><input type="text" placeholder="поиск" name="search"></label>
-    <button type="submit" class="btn-submit">
-      <svg class="svg-icon">
-        <use xlink:href="img/sprite.svg#search"></use>
-      </svg>
-    </button>
-  </form>
+            <div class="phone-mobile">
+              <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+              <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
+            </div>
 
-  <a href="#" class="links-complex" target="_blank">
-    <span class="links-complex__text">Домашние спортивные комплексы</span>
-    <span class="links-complex__icon"><svg class="svg-icon"><use
-        xlink:href="img/sprite.svg#link"></use></svg></span>
-  </a>
-</div>
+            <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
 
-<header>
-  <div class="header-top">
+            <a href="#" class="links-social">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+
+            <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+            <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="catalog.html" class="links-catalog">Каталог</a>
+            <ul class="menu">
+              <li><a href="about.html">о нас</a></li>
+              <li><a href="packing.html">упаковка и отправка</a></li>
+              <li><a href="certificate.html">сертификаты</a></li>
+              <li><a href="projects.html">наши проекты</a></li>
+              <li><a href="architects.html">архитекторам</a></li>
+            </ul>
+
+            <a href="#" class="links-complex" target="_blank">
+              <span class="links-complex__text">Домашние спортивные комплексы</span>
+              <span class="links-complex__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#link"></use></svg></span>
+            </a>
+
+            <form method="post" class="form-search">
+              <label><input type="text" placeholder="поиск" name="search"></label>
+              <button type="submit" class="btn-submit">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 wow animate__animated animate__fadeInLeft">
+          <h1>уличное игровое <br>
+            и спортивное оборудование</h1>
+        </div>
+        <div class="col-12 col-lg-6 wow animate__animated animate__fadeInRight">
+          <div class="box-text">
+            <p>Участвуем в реализации НАЦИОНАЛЬНЫХ ПРОЕКТОВ.
+              Предоставляем техническое задание для аукционов.
+              Работаем по 44-ФЗ и 223-ФЗ. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="category">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 wow animate__animated animate__fadeIn">
+          <h2 class="color-blue">Каталог оборудования</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-xl-6 mb-33 wow animate__animated animate__fadeInLeft">
+          <div class="category-box">
+            <a href="#" class="category-box__img">
+              <img src="img/category1.png" alt="">
+              <span class="category-box__img-val">17 позиций в каталоге</span>
+            </a>
+            <div class="category-box__body">
+              <h3>Спортивное <br> оборудование</h3>
+              <div class="box-text">
+                <ul class="list-dots">
+                  <li>Спортивные комплексы</li>
+                  <li>Оборудование WORKOUT (Уличная гимнастика)</li>
+                  <li>Прочее оборудование (ворота, столы, щиты)</li>
+                  <li>Военизированная полоса препядствий</li>
+                </ul>
+              </div>
+
+              <a href="catalog.html" class="btn btn-accent">смотреть все</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 mb-33 wow animate__animated animate__fadeInRight">
+          <div class="category-box">
+            <a href="#" class="category-box__img">
+              <img src="img/category2.png" alt="">
+              <span class="category-box__img-val">17 позиций в каталоге</span>
+            </a>
+            <div class="category-box__body">
+              <h3>Уличные <br> тренажеры</h3>
+              <div class="box-text">
+                <ul class="list-dots">
+                  <li>Детские тренажеры</li>
+                  <li>Тренажеры для людей без спортивной подготовки</li>
+                  <li>Тренажерные комплексы с навесом</li>
+                  <li>Силовые тренажеры для спортсменов</li>
+                </ul>
+              </div>
+
+              <a href="catalog.html" class="btn btn-accent">смотреть все</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 mb-33 wow animate__animated animate__fadeInLeft">
+          <div class="category-box">
+            <a href="#" class="category-box__img">
+              <img src="img/category3.png" alt="">
+              <span class="category-box__img-val">17 позиций в каталоге</span>
+            </a>
+            <div class="category-box__body">
+              <h3>Детские <br> площадки</h3>
+              <div class="box-text">
+                <ul class="list-dots column-count-2">
+                  <li>Игровые комплексы</li>
+                  <li>Качели, качалки, карусели</li>
+                  <li>Горки</li>
+                  <li>Зимние горки</li>
+                  <li>Песочницы и песочные дворики</li>
+                  <li>Игровые модули (Ролевые игры)</li>
+                  <li>Детские спортивные комплексы</li>
+                </ul>
+              </div>
+
+              <a href="catalog.html" class="btn btn-accent">смотреть все</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 mb-33 wow animate__animated animate__fadeInRight">
+          <div class="category-box">
+            <a href="#" class="category-box__img">
+              <img src="img/category4.png" alt="">
+              <span class="category-box__img-val">17 позиций в каталоге</span>
+            </a>
+            <div class="category-box__body">
+              <h3>Малые <br> архитектурные <br> формы</h3>
+              <div class="box-text">
+                <ul class="list-dots">
+                  <li>Беседки</li>
+                  <li>Скамьи</li>
+                  <li>Урны</li>
+                  <li>Прочее (арки, стенды)</li>
+                </ul>
+              </div>
+
+              <a href="catalog.html" class="btn btn-accent">смотреть все</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="advantages">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xl-10 offset-xl-1 align-items-center d-flex flex-wrap">
+          <div class="advantages-box wow animate__animated animate__fadeInLeft">
+            <div class="advantages-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
+            <div class="advantages-box__text">
+              <p>Доставка <br> по всей России</p>
+            </div>
+          </div>
+
+          <div class="advantages-box wow animate__animated animate__fadeInLeft">
+            <div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
+            <div class="advantages-box__text">
+              <p>Срок службы <br> 10 лет</p>
+            </div>
+          </div>
+
+          <div class="advantages-box wow animate__animated animate__fadeInLeft">
+            <div class="advantages-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
+            <div class="advantages-box__text">
+              <p>Европейский Сертификат <br> качества</p>
+            </div>
+          </div>
+
+          <div class="reward wow animate__animated animate__fadeInRight">
+            <div class="reward-body"><p>Компания «БУМ» удостоена знаком отличия «Лучшее предприятие страны» 2018, 2019,
+              2020</p></div>
+            <div class="reward-img"><img src="img/medals.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="reviews bg-grey">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 wow animate__animated animate__fadeIn">
+          <h2>Отзывы о нас</h2>
+        </div>
+        <div class="col-12 offset-xl-1 col-xl-10">
+          <div class="reviews-slider">
+            <div class="slide">
+              <a href="img/reviews1.png" data-fancybox="image" class="reviews-slider__box">
+                <img src="img/reviews1.png" alt="">
+              </a>
+            </div>
+            <div class="slide">
+              <a href="img/reviews2.png" data-fancybox="image" class="reviews-slider__box">
+                <img src="img/reviews2.png" alt="">
+              </a>
+            </div>
+            <div class="slide">
+              <a href="img/reviews3.png" data-fancybox="image" class="reviews-slider__box">
+                <img src="img/reviews3.png" alt="">
+              </a>
+            </div>
+            <div class="slide">
+              <a href="img/reviews4.png" data-fancybox="image" class="reviews-slider__box">
+                <img src="img/reviews4.png" alt="">
+              </a>
+            </div>
+            <div class="slide">
+              <a href="img/reviews5.png" data-fancybox="image" class="reviews-slider__box">
+                <img src="img/reviews5.png" alt="">
+              </a>
+            </div>
+            <div class="slide">
+              <a href="img/reviews6.png" data-fancybox="image" class="reviews-slider__box">
+                <img src="img/reviews6.png" alt="">
+              </a>
+            </div>
+            <div class="slide">
+              <a href="img/reviews1.png" data-fancybox="image" class="reviews-slider__box">
+                <img src="img/reviews1.png" alt="">
+              </a>
+            </div>
+            <div class="slide">
+              <a href="img/reviews2.png" data-fancybox="image" class="reviews-slider__box">
+                <img src="img/reviews2.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="callback-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xl-10 offset-xl-1">
+          <div class="callback-box wow animate__animated animate__fadeInLeft">
+            <h2>остались вопросы?</h2>
+            <form method="post" class="form">
+              <label><input type="text" placeholder="Имя" name="name"></label>
+              <label><input type="text" placeholder="Телефон" name="phone"></label>
+              <label><input type="text" placeholder="e-mail" name="mail"></label>
+              <button class="btn btn-accent" type="submit">Перезвоните мне</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-blue color-white">
     <div class="container">
       <div class="row">
         <div class="col-12 d-flex flex-wrap align-items-center">
           <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
           <div class="phone-group">
-            <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
-            <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+            <a href="tel:+79093150800" class="phone color-white">8 (909) 315-08-00</a>
+            <a href="tel:+79603166000" class="phone color-white">8 (960) 316-60-00</a>
           </div>
-
-          <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
+          <a href="mailto:pochta.bum@gmail.com" class="mail color-accent">pochta.bum@gmail.com</a>
 
           <a href="#" class="links-social">
             <svg class="svg-icon">
@@ -89,299 +381,20 @@
             </svg>
           </a>
 
-          <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
-          <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
-          <div class="btn-burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="header-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex flex-wrap align-items-center">
-          <a href="catalog.html" class="links-catalog">Каталог</a>
+          <a href="#" class="btn btn-border-white" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+
           <ul class="menu">
             <li><a href="about.html">о нас</a></li>
             <li><a href="packing.html">упаковка и отправка</a></li>
             <li><a href="certificate.html">сертификаты</a></li>
             <li><a href="projects.html">наши проекты</a></li>
             <li><a href="architects.html">архитекторам</a></li>
-            <li><a href="#">контакты</a></li>
           </ul>
-
-          <a href="#" class="links-complex" target="_blank">
-            <span class="links-complex__text">Домашние спортивные комплексы</span>
-            <span class="links-complex__icon"><svg class="svg-icon"><use
-                xlink:href="img/sprite.svg#link"></use></svg></span>
-          </a>
-
-          <form method="post" class="form-search">
-            <label><input type="text" placeholder="поиск" name="search"></label>
-            <button type="submit" class="btn-submit">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#search"></use>
-              </svg>
-            </button>
-          </form>
         </div>
       </div>
     </div>
-  </div>
-</header>
-
-<div class="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6 wow animate__animated animate__fadeInLeft">
-        <h1>уличное игровое <br>
-          и спортивное оборудование</h1>
-      </div>
-      <div class="col-12 col-lg-6 wow animate__animated animate__fadeInRight">
-        <div class="box-text">
-          <p>Участвуем в реализации НАЦИОНАЛЬНЫХ ПРОЕКТОВ.
-            Предоставляем техническое задание для аукционов.
-            Работаем по 44-ФЗ и 223-ФЗ. </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  </footer>
 </div>
-
-<section class="category">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 wow animate__animated animate__fadeIn">
-        <h2 class="color-blue">Каталог оборудования</h2>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-xl-6 mb-33 wow animate__animated animate__fadeInLeft">
-        <div class="category-box">
-          <a href="#" class="category-box__img">
-            <img src="img/category1.png" alt="">
-            <span class="category-box__img-val">17 позиций в каталоге</span>
-          </a>
-          <div class="category-box__body">
-            <h3>Спортивное <br> оборудование</h3>
-            <div class="box-text">
-              <ul class="list-dots">
-                <li>Спортивные комплексы</li>
-                <li>Оборудование WORKOUT (Уличная гимнастика)</li>
-                <li>Прочее оборудование (ворота, столы, щиты)</li>
-                <li>Военизированная полоса препядствий</li>
-              </ul>
-            </div>
-
-            <a href="catalog.html" class="btn btn-accent">смотреть все</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-xl-6 mb-33 wow animate__animated animate__fadeInRight">
-        <div class="category-box">
-          <a href="#" class="category-box__img">
-            <img src="img/category2.png" alt="">
-            <span class="category-box__img-val">17 позиций в каталоге</span>
-          </a>
-          <div class="category-box__body">
-            <h3>Уличные <br> тренажеры</h3>
-            <div class="box-text">
-              <ul class="list-dots">
-                <li>Детские тренажеры</li>
-                <li>Тренажеры для людей без спортивной подготовки</li>
-                <li>Тренажерные комплексы с навесом</li>
-                <li>Силовые тренажеры для спортсменов</li>
-              </ul>
-            </div>
-
-            <a href="catalog.html" class="btn btn-accent">смотреть все</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-xl-6 mb-33 wow animate__animated animate__fadeInLeft">
-        <div class="category-box">
-          <a href="#" class="category-box__img">
-            <img src="img/category3.png" alt="">
-            <span class="category-box__img-val">17 позиций в каталоге</span>
-          </a>
-          <div class="category-box__body">
-            <h3>Детские <br> площадки</h3>
-            <div class="box-text">
-              <ul class="list-dots column-count-2">
-                <li>Игровые комплексы</li>
-                <li>Качели, качалки, карусели</li>
-                <li>Горки</li>
-                <li>Зимние горки</li>
-                <li>Песочницы и песочные дворики</li>
-                <li>Игровые модули (Ролевые игры)</li>
-                <li>Детские спортивные комплексы</li>
-              </ul>
-            </div>
-
-            <a href="catalog.html" class="btn btn-accent">смотреть все</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-xl-6 mb-33 wow animate__animated animate__fadeInRight">
-        <div class="category-box">
-          <a href="#" class="category-box__img">
-            <img src="img/category4.png" alt="">
-            <span class="category-box__img-val">17 позиций в каталоге</span>
-          </a>
-          <div class="category-box__body">
-            <h3>Малые <br> архитектурные <br> формы</h3>
-            <div class="box-text">
-              <ul class="list-dots">
-                <li>Беседки</li>
-                <li>Скамьи</li>
-                <li>Урны</li>
-                <li>Прочее (арки, стенды)</li>
-              </ul>
-            </div>
-
-            <a href="catalog.html" class="btn btn-accent">смотреть все</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="advantages">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-xl-10 offset-xl-1 align-items-center d-flex flex-wrap">
-        <div class="advantages-box wow animate__animated animate__fadeInLeft">
-          <div class="advantages-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
-          <div class="advantages-box__text">
-            <p>Доставка <br> по всей России</p>
-          </div>
-        </div>
-
-        <div class="advantages-box wow animate__animated animate__fadeInLeft">
-          <div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
-          <div class="advantages-box__text">
-            <p>Срок службы <br> 10 лет</p>
-          </div>
-        </div>
-
-        <div class="advantages-box wow animate__animated animate__fadeInLeft">
-          <div class="advantages-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
-          <div class="advantages-box__text">
-            <p>Европейский Сертификат <br> качества</p>
-          </div>
-        </div>
-
-        <div class="reward wow animate__animated animate__fadeInRight">
-          <div class="reward-body"><p>Компания «БУМ» удостоена знаком отличия «Лучшее предприятие страны» 2018, 2019,
-            2020</p></div>
-          <div class="reward-img"><img src="img/medals.png" alt=""></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<section class="reviews bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 wow animate__animated animate__fadeIn">
-        <h2>Отзывы о нас</h2>
-      </div>
-      <div class="col-12 offset-xl-1 col-xl-10">
-        <div class="reviews-slider">
-          <div class="slide">
-            <a href="img/reviews1.png" data-fancybox="image" class="reviews-slider__box">
-              <img src="img/reviews1.png" alt="">
-            </a>
-          </div>
-          <div class="slide">
-            <a href="img/reviews2.png" data-fancybox="image" class="reviews-slider__box">
-              <img src="img/reviews2.png" alt="">
-            </a>
-          </div>
-          <div class="slide">
-            <a href="img/reviews3.png" data-fancybox="image" class="reviews-slider__box">
-              <img src="img/reviews3.png" alt="">
-            </a>
-          </div>
-          <div class="slide">
-            <a href="img/reviews4.png" data-fancybox="image" class="reviews-slider__box">
-              <img src="img/reviews4.png" alt="">
-            </a>
-          </div>
-          <div class="slide">
-            <a href="img/reviews5.png" data-fancybox="image" class="reviews-slider__box">
-              <img src="img/reviews5.png" alt="">
-            </a>
-          </div>
-          <div class="slide">
-            <a href="img/reviews6.png" data-fancybox="image" class="reviews-slider__box">
-              <img src="img/reviews6.png" alt="">
-            </a>
-          </div>
-          <div class="slide">
-            <a href="img/reviews1.png" data-fancybox="image" class="reviews-slider__box">
-              <img src="img/reviews1.png" alt="">
-            </a>
-          </div>
-          <div class="slide">
-            <a href="img/reviews2.png" data-fancybox="image" class="reviews-slider__box">
-              <img src="img/reviews2.png" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="callback-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-xl-10 offset-xl-1">
-        <div class="callback-box wow animate__animated animate__fadeInLeft">
-          <h2>остались вопросы?</h2>
-          <form method="post" class="form">
-            <label><input type="text" placeholder="Имя" name="name"></label>
-            <label><input type="text" placeholder="Телефон" name="phone"></label>
-            <label><input type="text" placeholder="e-mail" name="mail"></label>
-            <button class="btn btn-accent" type="submit">Перезвоните мне</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<footer class="bg-blue color-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 d-flex flex-wrap align-items-center">
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-        <div class="phone-group">
-        <a href="tel:+79093150800" class="phone color-white">8 (909) 315-08-00</a>
-        <a href="tel:+79603166000" class="phone color-white">8 (960) 316-60-00</a>
-        </div>
-        <a href="mailto:pochta.bum@gmail.com" class="mail color-accent">pochta.bum@gmail.com</a>
-
-        <a href="#" class="links-social">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#instagram"></use>
-          </svg>
-        </a>
-
-        <a href="#" class="btn btn-border-white" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <!-- Модальное окно -->
 <div class="modal fade" id="modalCallback" tabindex="-1" aria-labelledby="modalCallbackLabel" aria-hidden="true">

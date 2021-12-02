@@ -34,54 +34,224 @@
 
 <body>
 
-<div class="mobile-menu">
-  <div class="btn-close"></div>
-  <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-  <ul class="menu">
-    <li><a href="catalog.html">Каталог</a></li>
-    <li><a href="about.html">о нас</a></li>
-    <li><a href="packing.html">упаковка и отправка</a></li>
-    <li><a href="certificate.html">сертификаты</a></li>
-    <li><a href="projects.html">наши проекты</a></li>
-    <li><a href="architects.html">архитекторам</a></li>
-    <li><a href="#">контакты</a></li>
-  </ul>
-  <div class="phone-group">
-    <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
-    <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+<div class="wrapper">
+
+  <div class="mobile-menu">
+    <div class="btn-close"></div>
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+    <ul class="menu">
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="about.html">о нас</a></li>
+      <li><a href="packing.html">упаковка и отправка</a></li>
+      <li><a href="certificate.html">сертификаты</a></li>
+      <li><a href="projects.html">наши проекты</a></li>
+      <li><a href="architects.html">архитекторам</a></li>
+    </ul>
+    <div class="phone-group">
+      <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+      <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+    </div>
+
+    <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+    <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+
+    <form method="post" class="form-search">
+      <label><input type="text" placeholder="поиск" name="search"></label>
+      <button type="submit" class="btn-submit">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </form>
+
+    <a href="#" class="links-complex" target="_blank">
+      <span class="links-complex__text">Домашние спортивные комплексы</span>
+      <span class="links-complex__icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#link"></use></svg></span>
+    </a>
   </div>
 
-  <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
-  <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <div class="phone-group">
+              <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+              <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+            </div>
 
-  <form method="post" class="form-search">
-    <label><input type="text" placeholder="поиск" name="search"></label>
-    <button type="submit" class="btn-submit">
-      <svg class="svg-icon">
-        <use xlink:href="img/sprite.svg#search"></use>
-      </svg>
-    </button>
-  </form>
+            <div class="phone-mobile">
+              <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+              <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
+            </div>
 
-  <a href="#" class="links-complex" target="_blank">
-    <span class="links-complex__text">Домашние спортивные комплексы</span>
-    <span class="links-complex__icon"><svg class="svg-icon"><use
-        xlink:href="img/sprite.svg#link"></use></svg></span>
-  </a>
-</div>
+            <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
 
-<header>
-  <div class="header-top">
+            <a href="#" class="links-social">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+
+            <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+            <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="catalog.html" class="links-catalog">Каталог</a>
+            <ul class="menu">
+              <li><a href="about.html">о нас</a></li>
+              <li><a href="packing.html">упаковка и отправка</a></li>
+              <li><a href="certificate.html">сертификаты</a></li>
+              <li><a href="projects.html">наши проекты</a></li>
+              <li><a href="architects.html">архитекторам</a></li>
+            </ul>
+
+            <a href="#" class="links-complex" target="_blank">
+              <span class="links-complex__text">Домашние спортивные комплексы</span>
+              <span class="links-complex__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#link"></use></svg></span>
+            </a>
+
+            <form method="post" class="form-search">
+              <label><input type="text" placeholder="поиск" name="search"></label>
+              <button type="submit" class="btn-submit">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page about-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>О нас</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="subtitle-text color-blue">
+            <p>Мы являемся официальным представителем №1 Завода игрового спортивного оборудования ROMANA (город
+              Чебоксары), и занимаемся продвижением уличного игрового и спортивного оборудования по России.</p>
+          </div>
+
+          <div class="box-text">
+            <p>Наши заказчики - административные и спортивные бюджетные организации. А также коммерческие структуры -
+              базы
+              отдыха, строительные и производственные фирмы.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="reward reward-two">
+            <div class="reward-body"><p>Компания «БУМ» удостоена знаком отличия «Лучшее предприятие страны» 2018, 2019,
+              2020</p></div>
+            <div class="reward-img"><img src="img/medals.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-command">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xl-7">
+          <div class="director-box">
+            <div class="director-box__photo"><img src="img/director.jpeg" alt=""></div>
+            <div class="director-box__body">
+              <h2>Татьяна <br> Захарычева</h2>
+              <div class="subtitle-text color-blue">Генеральный директор <br> ООО «БУМ»</div>
+              <div class="box-text">
+                <p>«Свой проект я начала развивать в далеком 1997 году, когда познакомилась с Григорием Ивановичем
+                  Васильевым из города Чебоксары. Он создал производство домашних спортивных комплексов и предложил мне
+                  стать его первым представителем.</p>
+
+                <p>Сегодня это крупнейший в России завод игрового спортивного оборудования, который выпускает более 500
+                  наименований продукции для детей и взрослых, а экспортируется она в 25 стран мира, включая Канаду и
+                  Германию. Наша же компания помогает делать спорт доступным для каждого в России.</p>
+
+                <p>Существуют два вида компаний: те, которые стремятся сократить расходы клиента, и те, которые пытаются
+                  содрать с клиента побольше... Мы стараемся быть первыми!»</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-xl-5">
+          <div class="manager-box">
+            <div class="subtitle-text">
+              <p>Как сделать правильный выбор? Как заказать оборудование?
+                Где узнать стоимость и условия доставки?
+                Менеджеры проконсультируют вас по всем вопросам.</p>
+            </div>
+
+            <div class="call-text">
+              <h4>Позвоните</h4>
+              <a href="tel:+79093150800" class="phone-links">8 909 315 0800</a>
+            </div>
+
+            <div class="consultant-box">
+              <div class="consultant-box__photo"><img src="img/women-callback.jpg" alt=""></div>
+              <div class="consultant-box__body">
+                <h4>Елена Бумовская</h4>
+                <div class="position">Менеджера по работе с клиентами</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="callback-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xl-10 offset-xl-1">
+          <div class="callback-box">
+            <h2>остались вопросы?</h2>
+            <form method="post" class="form">
+              <label><input type="text" placeholder="Имя" name="name"></label>
+              <label><input type="text" placeholder="Телефон" name="phone"></label>
+              <label><input type="text" placeholder="e-mail" name="mail"></label>
+              <button class="btn btn-accent" type="submit">Перезвоните мне</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-blue color-white">
     <div class="container">
       <div class="row">
         <div class="col-12 d-flex flex-wrap align-items-center">
           <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
           <div class="phone-group">
-            <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
-            <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+            <a href="tel:+79093150800" class="phone color-white">8 (909) 315-08-00</a>
+            <a href="tel:+79603166000" class="phone color-white">8 (960) 316-60-00</a>
           </div>
-
-          <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
+          <a href="mailto:pochta.bum@gmail.com" class="mail color-accent">pochta.bum@gmail.com</a>
 
           <a href="#" class="links-social">
             <svg class="svg-icon">
@@ -89,175 +259,20 @@
             </svg>
           </a>
 
-          <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
-          <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
-          <div class="btn-burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="header-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex flex-wrap align-items-center">
-          <a href="catalog.html" class="links-catalog">Каталог</a>
+          <a href="#" class="btn btn-border-white" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+
           <ul class="menu">
             <li><a href="about.html">о нас</a></li>
             <li><a href="packing.html">упаковка и отправка</a></li>
             <li><a href="certificate.html">сертификаты</a></li>
             <li><a href="projects.html">наши проекты</a></li>
             <li><a href="architects.html">архитекторам</a></li>
-            <li><a href="#">контакты</a></li>
           </ul>
-
-          <a href="#" class="links-complex" target="_blank">
-            <span class="links-complex__text">Домашние спортивные комплексы</span>
-            <span class="links-complex__icon"><svg class="svg-icon"><use
-                xlink:href="img/sprite.svg#link"></use></svg></span>
-          </a>
-
-          <form method="post" class="form-search">
-            <label><input type="text" placeholder="поиск" name="search"></label>
-            <button type="submit" class="btn-submit">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#search"></use>
-              </svg>
-            </button>
-          </form>
         </div>
       </div>
     </div>
-  </div>
-</header>
-
-<section class="page about-page">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1>О нас</h1>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-lg-6">
-        <div class="subtitle-text color-blue">
-          <p>Мы являемся официальным представителем №1 Завода игрового спортивного оборудования ROMANA (город
-            Чебоксары), и занимаемся продвижением уличного игрового и спортивного оборудования по России.</p>
-        </div>
-
-        <div class="box-text">
-          <p>Наши заказчики - административные и спортивные бюджетные организации. А также коммерческие структуры - базы
-            отдыха, строительные и производственные фирмы.</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="reward reward-two">
-          <div class="reward-body"><p>Компания «БУМ» удостоена знаком отличия «Лучшее предприятие страны» 2018, 2019,
-            2020</p></div>
-          <div class="reward-img"><img src="img/medals.png" alt=""></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="about-command">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-xl-7">
-        <div class="director-box">
-          <div class="director-box__photo"><img src="img/director.jpeg" alt=""></div>
-          <div class="director-box__body">
-            <h2>Татьяна <br> Захарычева</h2>
-            <div class="subtitle-text color-blue">Генеральный директор <br> ООО «БУМ»</div>
-            <div class="box-text">
-              <p>«Свой проект я начала развивать в далеком 1997 году, когда познакомилась с Григорием Ивановичем
-                Васильевым из города Чебоксары. Он создал производство домашних спортивных комплексов и предложил мне
-                стать его первым представителем.</p>
-
-              <p>Сегодня это крупнейший в России завод игрового спортивного оборудования, который выпускает более 500
-                наименований продукции для детей и взрослых, а экспортируется она в 25 стран мира, включая Канаду и
-                Германию. Наша же компания помогает делать спорт доступным для каждого в России.</p>
-
-              <p>Существуют два вида компаний: те, которые стремятся сократить расходы клиента, и те, которые пытаются
-                содрать с клиента побольше... Мы стараемся быть первыми!»</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-xl-5">
-        <div class="manager-box">
-          <div class="subtitle-text">
-            <p>Как сделать правильный выбор? Как заказать оборудование?
-              Где узнать стоимость и условия доставки?
-              Менеджеры проконсультируют вас по всем вопросам.</p>
-          </div>
-
-          <div class="call-text">
-            <h4>Позвоните</h4>
-            <a href="tel:+79093150800" class="phone-links">8 909 315 0800</a>
-          </div>
-          
-          <div class="consultant-box">
-            <div class="consultant-box__photo"><img src="img/women-callback.png" alt=""></div>
-            <div class="consultant-box__body">
-              <h4>Елена Бумовская</h4>
-              <div class="position">Менеджера по работе с клиентами</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="callback-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-xl-10 offset-xl-1">
-        <div class="callback-box">
-          <h2>остались вопросы?</h2>
-          <form method="post" class="form">
-            <label><input type="text" placeholder="Имя" name="name"></label>
-            <label><input type="text" placeholder="Телефон" name="phone"></label>
-            <label><input type="text" placeholder="e-mail" name="mail"></label>
-            <button class="btn btn-accent" type="submit">Перезвоните мне</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+  </footer>
 </div>
-
-
-<footer class="bg-blue color-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 d-flex flex-wrap align-items-center">
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-        <div class="phone-group">
-          <a href="tel:+79093150800" class="phone color-white">8 (909) 315-08-00</a>
-          <a href="tel:+79603166000" class="phone color-white">8 (960) 316-60-00</a>
-        </div>
-        <a href="mailto:pochta.bum@gmail.com" class="mail color-accent">pochta.bum@gmail.com</a>
-
-        <a href="#" class="links-social">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#instagram"></use>
-          </svg>
-        </a>
-
-        <a href="#" class="btn btn-border-white" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <!-- Модальное окно -->
 <div class="modal fade" id="modalCallback" tabindex="-1" aria-labelledby="modalCallbackLabel" aria-hidden="true">

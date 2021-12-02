@@ -351,9 +351,18 @@ h3
     font-weight: bold
     display: block
 
+.wrapper
+  width: 100%
+  padding: 156px 0 0
 
 //header
 header
+  position: fixed
+  z-index: 5
+  width: 100%
+  top: 0
+  left: 0
+
   .logo
     margin: 0 78px 0 0
 
@@ -361,6 +370,9 @@ header
     max-width: 262px
     margin: 0 0 0 29px
     height: 43px
+
+.phone-mobile
+  display: none
 
 .header-top
   background: #fff
@@ -733,6 +745,15 @@ footer
 
     &:hover
       color: #fff
+  .menu
+    display: none
+    margin: 10px 0 0
+    justify-content: center
+    width: 100%
+    li
+      a
+        color: #fff
+
 
 //modal
 .modal-header
@@ -1492,7 +1513,7 @@ f
     font-size: 16px
     max-width: 177px
     height: auto
-    padding: 8px 8px 8px 16px
+    padding: 8px
     margin: 0 12px 0 0
     &:last-child
       margin: 0
@@ -1505,6 +1526,8 @@ f
     margin: 0 0 0 auto
   .btn-download
     text-align: left
+    .btn-icon
+      margin: 0 23px 0 4px
 
 .list-characteristics-two
   width: fit-content

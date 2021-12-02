@@ -34,54 +34,197 @@
 
 <body>
 
-<div class="mobile-menu">
-  <div class="btn-close"></div>
-  <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-  <ul class="menu">
-    <li><a href="catalog.html">Каталог</a></li>
-    <li><a href="about.html">о нас</a></li>
-    <li><a href="packing.html">упаковка и отправка</a></li>
-    <li><a href="certificate.html">сертификаты</a></li>
-    <li><a href="projects.html">наши проекты</a></li>
-    <li><a href="architects.html">архитекторам</a></li>
-    <li><a href="#">контакты</a></li>
-  </ul>
-  <div class="phone-group">
-    <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
-    <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+<div class="wrapper">
+
+  <div class="mobile-menu">
+    <div class="btn-close"></div>
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+    <ul class="menu">
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="about.html">о нас</a></li>
+      <li><a href="packing.html">упаковка и отправка</a></li>
+      <li><a href="certificate.html">сертификаты</a></li>
+      <li><a href="projects.html">наши проекты</a></li>
+      <li><a href="architects.html">архитекторам</a></li>
+    </ul>
+    <div class="phone-group">
+      <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+      <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+    </div>
+
+    <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+    <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+
+    <form method="post" class="form-search">
+      <label><input type="text" placeholder="поиск" name="search"></label>
+      <button type="submit" class="btn-submit">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </form>
+
+    <a href="#" class="links-complex" target="_blank">
+      <span class="links-complex__text">Домашние спортивные комплексы</span>
+      <span class="links-complex__icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#link"></use></svg></span>
+    </a>
   </div>
 
-  <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
-  <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <div class="phone-group">
+              <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+              <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+            </div>
 
-  <form method="post" class="form-search">
-    <label><input type="text" placeholder="поиск" name="search"></label>
-    <button type="submit" class="btn-submit">
-      <svg class="svg-icon">
-        <use xlink:href="img/sprite.svg#search"></use>
-      </svg>
-    </button>
-  </form>
+            <div class="phone-mobile">
+              <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
+              <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
+            </div>
 
-  <a href="#" class="links-complex" target="_blank">
-    <span class="links-complex__text">Домашние спортивные комплексы</span>
-    <span class="links-complex__icon"><svg class="svg-icon"><use
-        xlink:href="img/sprite.svg#link"></use></svg></span>
-  </a>
-</div>
+            <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
 
-<header>
-  <div class="header-top">
+            <a href="#" class="links-social">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+
+            <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+            <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="catalog.html" class="links-catalog">Каталог</a>
+            <ul class="menu">
+              <li><a href="about.html">о нас</a></li>
+              <li><a href="packing.html">упаковка и отправка</a></li>
+              <li><a href="certificate.html">сертификаты</a></li>
+              <li><a href="projects.html">наши проекты</a></li>
+              <li><a href="architects.html">архитекторам</a></li>
+            </ul>
+
+            <a href="#" class="links-complex" target="_blank">
+              <span class="links-complex__text">Домашние спортивные комплексы</span>
+              <span class="links-complex__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#link"></use></svg></span>
+            </a>
+
+            <form method="post" class="form-search">
+              <label><input type="text" placeholder="поиск" name="search"></label>
+              <button type="submit" class="btn-submit">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page packing-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <h1>Упаковка <br> и отправка</h1>
+          <div class="box-text">
+            <p>Вся продукция аккуратно упаковывается в специальные транспортировочные ящики или обматывается
+              многослойным
+              стрейчем. Упакованные изделия бережно укладываются и плотно фиксируются, исключая возможность
+              опрокидывания
+              и свободного перемещения в кузове. Тем самым сводится к минимуму риск порчи при транспортировке.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="packing-img"><img src="img/packing1.png" alt=""></div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="images-wrapper">
+            <div class="packing-img"><img src="img/packing2.png" alt=""></div>
+            <div class="packing-img"><img src="img/packing3.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="delivery">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <h2>Условия доставки</h2>
+          <div class="subtitle-text color-blue"><p>Для отправки вашего заказа логисты выбирают минимальную по стоимости
+            доставку.</p></div>
+
+          <div class="box-text">
+            <p>Если в заказе менее 5 единиц оборудования, груз отправляется Транспортной Компанией. При этом стоимость
+              доставки до терминала ТК в г. Чебоксары для Заказчика бесплатная.</p>
+
+            <p>
+              <strong>Если тренажеров более 5 штук, чаще выбирается "Газель". <br>
+                Если в заказе есть теневой навес, везем на "МАЗе".</strong>
+            </p>
+
+            <p>Вся информация о способе доставке вашего заказа будет у вас в коммерческом предложении.</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="images-wrapper">
+            <img src="img/maz1.png" class="img-1" alt="">
+            <img src="img/maz2.png" class="img-2" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="callback-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xl-10 offset-xl-1">
+          <div class="callback-box">
+            <h2>остались вопросы?</h2>
+            <form method="post" class="form">
+              <label><input type="text" placeholder="Имя" name="name"></label>
+              <label><input type="text" placeholder="Телефон" name="phone"></label>
+              <label><input type="text" placeholder="e-mail" name="mail"></label>
+              <button class="btn btn-accent" type="submit">Перезвоните мне</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-blue color-white">
     <div class="container">
       <div class="row">
         <div class="col-12 d-flex flex-wrap align-items-center">
           <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
           <div class="phone-group">
-            <a href="tel:+79093150800" class="phone">8 (909) 315-08-00</a>
-            <a href="tel:+79603166000" class="phone">8 (960) 316-60-00</a>
+            <a href="tel:+79093150800" class="phone color-white">8 (909) 315-08-00</a>
+            <a href="tel:+79603166000" class="phone color-white">8 (960) 316-60-00</a>
           </div>
-
-          <a href="mailto:pochta.bum@gmail.com" class="mail text-decoration color-blue">pochta.bum@gmail.com</a>
+          <a href="mailto:pochta.bum@gmail.com" class="mail color-accent">pochta.bum@gmail.com</a>
 
           <a href="#" class="links-social">
             <svg class="svg-icon">
@@ -89,146 +232,20 @@
             </svg>
           </a>
 
-          <a href="#" class="btn btn-accent" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
-          <a href="#" class="btn btn-accent" data-target="#modalPrice" data-toggle="modal">запросить прайс</a>
-          <div class="btn-burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="header-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex flex-wrap align-items-center">
-          <a href="catalog.html" class="links-catalog">Каталог</a>
+          <a href="#" class="btn btn-border-white" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
+
           <ul class="menu">
             <li><a href="about.html">о нас</a></li>
             <li><a href="packing.html">упаковка и отправка</a></li>
             <li><a href="certificate.html">сертификаты</a></li>
             <li><a href="projects.html">наши проекты</a></li>
             <li><a href="architects.html">архитекторам</a></li>
-            <li><a href="#">контакты</a></li>
           </ul>
-
-          <a href="#" class="links-complex" target="_blank">
-            <span class="links-complex__text">Домашние спортивные комплексы</span>
-            <span class="links-complex__icon"><svg class="svg-icon"><use
-                xlink:href="img/sprite.svg#link"></use></svg></span>
-          </a>
-
-          <form method="post" class="form-search">
-            <label><input type="text" placeholder="поиск" name="search"></label>
-            <button type="submit" class="btn-submit">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#search"></use>
-              </svg>
-            </button>
-          </form>
         </div>
       </div>
     </div>
-  </div>
-</header>
-
-<section class="page packing-page">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-5">
-        <h1>Упаковка <br> и отправка</h1>
-        <div class="box-text">
-          <p>Вся продукция аккуратно упаковывается в специальные транспортировочные ящики или обматывается многослойным
-            стрейчем. Упакованные изделия бережно укладываются и плотно фиксируются, исключая возможность опрокидывания
-            и свободного перемещения в кузове. Тем самым сводится к минимуму риск порчи при транспортировке.</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="packing-img"><img src="img/packing1.png" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="images-wrapper">
-          <div class="packing-img"><img src="img/packing2.png" alt=""></div>
-          <div class="packing-img"><img src="img/packing3.png" alt=""></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="delivery">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-5">
-        <h2>Условия доставки</h2>
-        <div class="subtitle-text color-blue"><p>Для отправки вашего заказа логисты выбирают минимальную по стоимости доставку.</p></div>
-
-        <div class="box-text">
-          <p>Если в заказе менее 5 единиц оборудования, груз отправляется Транспортной Компанией. При этом стоимость
-            доставки до терминала ТК в г. Чебоксары для Заказчика бесплатная.</p>
-
-          <p>
-            <strong>Если тренажеров более 5 штук, чаще выбирается "Газель". <br>
-              Если в заказе есть теневой навес, везем на "МАЗе".</strong>
-          </p>
-
-          <p>Вся информация о способе доставке вашего заказа будет у вас в коммерческом предложении.</p>
-        </div>
-      </div>
-      <div class="col-12 col-lg-7">
-        <div class="images-wrapper">
-          <img src="img/maz1.png" class="img-1" alt="">
-          <img src="img/maz2.png" class="img-2" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="callback-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-xl-10 offset-xl-1">
-        <div class="callback-box">
-          <h2>остались вопросы?</h2>
-          <form method="post" class="form">
-            <label><input type="text" placeholder="Имя" name="name"></label>
-            <label><input type="text" placeholder="Телефон" name="phone"></label>
-            <label><input type="text" placeholder="e-mail" name="mail"></label>
-            <button class="btn btn-accent" type="submit">Перезвоните мне</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+  </footer>
 </div>
-
-
-<footer class="bg-blue color-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 d-flex flex-wrap align-items-center">
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-        <div class="phone-group">
-          <a href="tel:+79093150800" class="phone color-white">8 (909) 315-08-00</a>
-          <a href="tel:+79603166000" class="phone color-white">8 (960) 316-60-00</a>
-        </div>
-        <a href="mailto:pochta.bum@gmail.com" class="mail color-accent">pochta.bum@gmail.com</a>
-
-        <a href="#" class="links-social">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#instagram"></use>
-          </svg>
-        </a>
-
-        <a href="#" class="btn btn-border-white" data-target="#modalCallback" data-toggle="modal">заказать звонок</a>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <!-- Модальное окно -->
 <div class="modal fade" id="modalCallback" tabindex="-1" aria-labelledby="modalCallbackLabel" aria-hidden="true">

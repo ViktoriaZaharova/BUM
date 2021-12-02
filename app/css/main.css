@@ -365,13 +365,25 @@ h3 {
     font-weight: bold;
     display: block; }
 
-header .logo {
-  margin: 0 78px 0 0; }
+.wrapper {
+  width: 100%;
+  padding: 156px 0 0; }
 
-header .btn {
-  max-width: 262px;
-  margin: 0 0 0 29px;
-  height: 43px; }
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  top: 0;
+  left: 0; }
+  header .logo {
+    margin: 0 78px 0 0; }
+  header .btn {
+    max-width: 262px;
+    margin: 0 0 0 29px;
+    height: 43px; }
+
+.phone-mobile {
+  display: none; }
 
 .header-top {
   background: #fff;
@@ -782,6 +794,15 @@ footer {
   footer .mail {
     margin: 0 66px 0 102px; }
     footer .mail:hover {
+      color: #fff; }
+  footer .menu {
+    display: none;
+    margin: 10px 0 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%; }
+    footer .menu li a {
       color: #fff; }
 
 .modal-header {
@@ -1569,7 +1590,7 @@ footer {
     font-size: 16px;
     max-width: 177px;
     height: auto;
-    padding: 8px 8px 8px 16px;
+    padding: 8px;
     margin: 0 12px 0 0; }
     .characteristics-wrap .btn:last-child {
       margin: 0; }
@@ -1582,6 +1603,8 @@ footer {
     margin: 0 0 0 auto; }
   .characteristics-wrap .btn-download {
     text-align: left; }
+    .characteristics-wrap .btn-download .btn-icon {
+      margin: 0 23px 0 4px; }
 
 .list-characteristics-two {
   width: -webkit-fit-content;
@@ -1762,7 +1785,7 @@ footer {
     line-height: normal; }
   .download-box h3 {
     font-size: 18px;
-    max-width: 140px; }
+    max-width: 150px; }
   .characteristics-wrap .btn {
     font-size: 14px;
     max-width: 165px; }
@@ -1776,6 +1799,8 @@ footer {
       min-width: 180px; } }
 
 @media only screen and (max-width: 1470px) {
+  .wrapper {
+    padding: 150px 0 0; }
   .phone {
     font-size: 22px;
     margin: 0 15px 0 0; }
@@ -1900,10 +1925,18 @@ footer {
     font-size: 20px; } }
 
 @media only screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 100px 0 0; }
   .header-bottom {
     display: none; }
   header .phone-group {
-    display: none; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .btn-burger {
     display: block; }
   .advantages-box {
@@ -1972,6 +2005,8 @@ footer {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .wrapper {
+    padding: 88px 0 0; }
   .home h1 {
     margin: 0 0 20px; }
   .home br {
@@ -2002,6 +2037,10 @@ footer {
             justify-content: center; }
   footer .btn {
     max-width: 170px; }
+  footer .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .subtitle-text {
     margin: 0 0 30px;
     font-size: 18px; }
@@ -2042,13 +2081,15 @@ footer {
     width: 100%;
     height: 100%;
     padding: 30px 20px;
-    z-index: 3;
+    z-index: 10;
     background: #fff;
     display: none;
     -webkit-box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.1);
     overflow-y: auto; }
   .sidebar-box {
+    margin: 30px 0; }
+  .sidebar .sidebar-box {
     display: none; }
   .btn-close-sidebar {
     display: block; }
@@ -2131,6 +2172,11 @@ footer {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
+  header .mail {
+    font-size: 14px;
+    margin: 0; }
+  header .links-social {
+    display: none; }
   .category-box__img {
     max-width: 100%;
     height: 250px; }
@@ -2242,11 +2288,32 @@ footer {
   .list-characteristics-two:before {
     display: none; }
   .list-characteristics-two span {
-    padding: 0; } }
+    padding: 0; }
+  .video-box {
+    font-size: 16px;
+    margin: 0 0 30px; }
+    .video-box:last-child {
+      margin: 0 0 30px; }
+    .video-box__body {
+      padding: 20px 0 0; }
+  .sidebar-box {
+    margin: 30px 0 0; } }
 
 @media only screen and (max-width: 480px) {
+  header .phone-group {
+    display: none; }
+  header .phone {
+    font-size: 14px; }
   header .mail {
     display: none; }
+  .phone-mobile {
+    display: block; }
+    .phone-mobile .mail {
+      display: block; }
+  .wrapper {
+    padding: 64px 0 0; }
+  .phone {
+    font-size: 16px; }
   .header-top {
     padding: 10px 0; }
   .callback-box .form label, .callback-box .form button {
