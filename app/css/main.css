@@ -544,6 +544,15 @@ header {
   .links-catalog:hover {
     color: #000; }
 
+header .dropdown:hover > .dropdown-menu {
+  display: block; }
+
+header .dropdown-menu {
+  margin: 0; }
+  header .dropdown-menu .dropdown .dropdown-menu {
+    top: 0;
+    left: 100%; }
+
 .home {
   padding: 43px 0 17px;
   position: relative; }

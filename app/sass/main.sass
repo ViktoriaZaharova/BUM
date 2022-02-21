@@ -512,6 +512,20 @@ header
   &:hover
     color: #000
 
+
+header
+  .dropdown
+    &:hover
+      >.dropdown-menu
+        display: block
+
+  .dropdown-menu
+    margin: 0
+    .dropdown
+      .dropdown-menu
+        top: 0
+        left: 100%
+
 //.home
 .home
   padding: 43px 0 17px
